@@ -1,72 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bir Şirket Sitesi!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bir Şirket Sitesi!</title>
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </nav>
+        <img id="logo-img" class="logo" alt="Bir Şirket Sitesi logo" />
+      </header>
+      <section class="cta">
+        <div class="cta-text">
+          <h1></h1>
+          <button></button>
+        </div>
+        <img id="cta-img" alt="Bir kod parçası resmi" />
+      </section>
+      <section class="main-content">
+        <div class="top-content">
+          <div class="text-content">
+            <h4></h4>
+            <p></p>
+          </div>
+          <div class="text-content">
+            <h4></h4>
+            <p></p>
+          </div>
+        </div>
+        <img
+          class="middle-img"
+          id="middle-img"
+          alt="Ekran boyunca bir kod parçası resmi"
+        />
+        <div class="bottom-content">
+          <div class="text-content">
+            <h4></h4>
+            <p></p>
+          </div>
+          <div class="text-content">
+            <h4></h4>
+            <p></p>
+          </div>
+          <div class="text-content">
+            <h4></h4>
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h4></h4>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+      <footer>
+        <a href="#"></a>
+      </footer>
+    </div>
+  </body>
 
-<body>
-  <div class="container">
-    <header>
-      <nav>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-      </nav>
-      <img id="logo-img" class="logo" alt="Bir Şirket Sitesi logo">
-    </header>
-    <section class="cta">
-      <div class="cta-text">
-        <h1></h1>
-        <button></button>
-      </div>
-      <img id="cta-img" alt="Bir kod parçası resmi">
-    </section>
-    <section class="main-content">
-      <div class="top-content">
-        <div class="text-content">
-          <h4></h4>
-          <p></p>
-        </div>
-        <div class="text-content">
-          <h4></h4>
-          <p></p>
-        </div>
-      </div>
-      <img class="middle-img" id="middle-img" alt="Ekran boyunca bir kod parçası resmi">
-      <div class="bottom-content">
-        <div class="text-content">
-          <h4></h4>
-          <p></p>
-        </div>
-        <div class="text-content">
-          <h4></h4>
-          <p></p>
-        </div>
-        <div class="text-content">
-          <h4></h4>
-          <p></p>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <h4></h4>
-      <p></p>
-      <p></p>
-      <p></p>
-    </section>
-    <footer>
-      <a href="#"></a>
-    </footer>
-  </div>
-</body>
+  <script deser>
+    const nava = document.getElementsByTagName("a");
+    for (let i = 0; i < nava.length - 1; i++) {
+      nava[i].setAttribute("class", "italic");
+    }
+    nava[0].textContent = "Servisler";
+    nava[1].textContent = "Ürünler";
+    nava[2].textContent = "Vizyon";
+    nava[3].textContent = "Özellikler";
+    nava[4].textContent = "Hakkımızda";
+    nava[5].textContent = "İletişim";
+    const navimg = document.getElementById("logo-img");
+    navimg.setAttribute("src", "../mocks/img/logo.png");
+    const ctatext = document.querySelector(".cta-text>h1");
+    ctatext.textContent = "Bu DOM Mükemmel";
+    const buttontext = document.querySelector(".cta-text>button");
+    buttontext.textContent = "Başlayın";
+    const ctaimg = document.getElementById("cta-img");
+    ctaimg.setAttribute("src", "../mocks/img/cta.png");
+    const textContent1 = document.querySelectorAll(".text-content>h4");
+    textContent1[0].textContent = "Özellikler";
+    textContent1[1].textContent = "Hakkında";
 
+    textContent1[2].textContent = "Servisler";
+
+    textContent1[3].textContent = "Ürünler";
+    textContent1[4].textContent = "Vizyon";
+    const tcp = document.querySelectorAll(".text-content>p");
+    tcp[0].textContent =
+      "Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+    tcp[1].textContent =
+      "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+    const middleimg = document.getElementsByClassName("middle-img")[0];
+    middleimg.setAttribute("src", "../mocks/img/accent.png");
+    tcp[2].textContent =
+      "Servisler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis";
+    tcp[3].textContent =
+      "Ürünler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis";
+    tcp[4].textContent =
+      "Vizyon içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis";
+    const sch5 = document.querySelector(".contact>h4");
+    sch5.textContent = "İletişim";
+    const schp = document.querySelectorAll(".contact>p");
+    schp[0].textContent =
+      "100 numara Bilmem ne sokak Ankara'da bir semt, Türkiye";
+    schp[1].textContent = "+90 (123) 456-7899";
+    schp[2].textContent = "satis@birsirketsitesi.com.tr";
+    const footeredit = document.querySelector("footer>a");
+    footeredit.textContent = "Copyright Bir Şirket Sitesi 2022";
+    footeredit.classList.add("bold");
+  </script>
 </html>
