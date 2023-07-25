@@ -80,14 +80,14 @@
     for (let i = 0; i < nava.length - 1; i++) {
       nava[i].setAttribute("class", "italic");
     }
-    nava[0].textContent = "Servisler";
-    nava[1].textContent = "Ürünler";
-    nava[2].textContent = "Vizyon";
-    nava[3].textContent = "Özellikler";
-    nava[4].textContent = "Hakkımızda";
-    nava[5].textContent = "İletişim";
+    nava[0].textContent = siteContent.nav["nav-item-1"];
+    nava[1].textContent = siteContent.nav["nav-item-2"];
+    nava[2].textContent = siteContent.nav["nav-item-3"];
+    nava[3].textContent = siteContent.nav["nav-item-4"];
+    nava[4].textContent = siteContent.nav["nav-item-5"];
+    nava[5].textContent = siteContent.nav["nav-item-6"];
     const navimg = document.getElementById("logo-img");
-    navimg.setAttribute("src", "../mocks/img/logo.png");
+    navimg.setAttribute("src", siteContent.images["logo-img"]);
     const ctatext = document.querySelector(".cta-text>h1");
     ctatext.textContent = "Bu DOM Mükemmel";
     const buttontext = document.querySelector(".cta-text>button");
