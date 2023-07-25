@@ -67,32 +67,27 @@ buttontext.textContent = siteContent.cta["button"];
 const ctaimg = document.getElementById("cta-img");
 ctaimg.setAttribute("src", siteContent.images["cta-img"]);
 const textContent1 = document.querySelectorAll(".text-content>h4");
-textContent1[0].textContent = "Özellikler";
-textContent1[1].textContent = "Hakkında";
+textContent1[0].textContent = siteContent["ana-içerik"]["özellikler-h4"];
+textContent1[1].textContent = siteContent["ana-içerik"]["hakkımızda-h4"];
 
-textContent1[2].textContent = "Servisler";
+textContent1[2].textContent = siteContent["ana-içerik"]["servisler-h4"];
 
-textContent1[3].textContent = "Ürünler";
-textContent1[4].textContent = "Vizyon";
+textContent1[3].textContent = siteContent["ana-içerik"]["ürünler-h4"];
+textContent1[4].textContent = siteContent["ana-içerik"]["vizyon-h4"];
 const tcp = document.querySelectorAll(".text-content>p");
-tcp[0].textContent =
-  "Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-tcp[1].textContent =
-  "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+tcp[0].textContent = siteContent["ana-içerik"]["özellikler-içerik"];
+tcp[1].textContent = siteContent["ana-içerik"]["hakkımızda-içerik"];
 const middleimg = document.getElementsByClassName("middle-img")[0];
 middleimg.setAttribute("src", siteContent.images["accent-img"]);
-tcp[2].textContent =
-  "Servisler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis";
-tcp[3].textContent =
-  "Ürünler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis";
-tcp[4].textContent =
-  "Vizyon içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis";
+tcp[2].textContent = siteContent["ana-içerik"]["servisler-içeriği"];
+tcp[3].textContent = siteContent["ana-içerik"]["ürünler-içeriği"];
+tcp[4].textContent = siteContent["ana-içerik"]["vizyon-içeriği"];
 const sch5 = document.querySelector(".contact>h4");
-sch5.textContent = "İletişim";
+sch5.textContent = siteContent.iletisim["iletişim-h4"];
 const schp = document.querySelectorAll(".contact>p");
-schp[0].textContent = "100 numara Bilmem ne sokak Ankara'da bir semt, Türkiye";
-schp[1].textContent = "+90 (123) 456-7899";
-schp[2].textContent = "satis@birsirketsitesi.com.tr";
+schp[0].textContent = siteContent.iletisim.adres;
+schp[1].textContent = siteContent.iletisim.telefon;
+schp[2].textContent = siteContent.iletisim.email;
 const footeredit = document.querySelector("footer>a");
-footeredit.textContent = "Copyright Bir Şirket Sitesi 2022";
+footeredit.textContent = siteContent.footer.copyright;
 footeredit.classList.add("bold");
